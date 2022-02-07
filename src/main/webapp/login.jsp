@@ -10,7 +10,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!-- Contenido -->
 <%
   String name = request.getParameter("name");
   String password = request.getParameter("password");
@@ -26,7 +25,7 @@
     request.getSession().setAttribute("user",null);
   }
 %>
-%>
+<!-- Contenido -->
 <div class="container" id="main-container">
   <h2>Identificación de usuario</h2>
   <form class="form-horizontal" method="post" action="login.jsp">
